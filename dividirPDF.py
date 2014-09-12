@@ -1,11 +1,22 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from PyPDF2 import PdfFileWriter, PdfFileReader
+try:
+	from PyPDF2 import PdfFileWriter, PdfFileReader
+	modulo = True
+except ImportError:
+	modulo = False
+
 import sys
 import os
 
 def main():
+
+	# --- Verifica se o módulo foi instalado ---
+	if (not modulo):
+ 		os.system('clear')
+ 		print("Módulo PyPDF2 não instalado.\nAcesse https://pypi.python.org/pypi/PyPDF2/ e instale o módulo para poder usar esse Script Python.")
+ 		sys.exit(1)
 
 	# --- Verifica a quantidade de parâmetros ---
 	if (len(sys.argv) != 2):

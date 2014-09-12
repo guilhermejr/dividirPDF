@@ -9,7 +9,7 @@ tive a idéia de desenvolver esse "programinha".
 Ele é bem simples, o arquivo que você passar como parâmetro será dividido em
 vários arquivos, cada um com uma das páginas do arquivo original.
 
-O programa é desenvolvido em python e tem uma única dependência que é o PyDFP2
+O programa é desenvolvido em python e tem uma única dependência que é o PyPDF2
 https://pypi.python.org/pypi/PyPDF2/ 
 
 Como utilizo OS X Mavericks esse Script Python foi desenvolvido e testado para
