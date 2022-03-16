@@ -46,10 +46,10 @@ def main():
 		sys.exit(1)
 
 	# --- Divide o arquivo ---
-	for i in xrange(numPaginas):
+	for i in range(numPaginas):
 		saida = PdfFileWriter()
 		saida.addPage(entrada.getPage(i))
-		outputStream = file("%s-%s%s" % (arquivo[:-4], i+1, arquivo[-4:]), "wb")
+		outputStream = open("%s-%s%s" % (arquivo[:-4], i+1, arquivo[-4:]), "wb")
 		saida.write(outputStream)
 		outputStream.close()
 
